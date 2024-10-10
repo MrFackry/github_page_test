@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario de contacto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="contenedor-menu">
+            <ul class="listas">
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="#">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-contenido-formulario">
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                
+                <div class="campo">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Tu apellido" required>
+                </div>
+                
+                <fieldset>
+                    <legend>Género</legend>
+                    <div class="campo">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        
+                    </div>
+                    <div class="campo">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        
+                    </div>
+                </fieldset>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Razón de Contacto</legend>
+                <div class="campo">
+                    <label for="razonContacto">¿Por qué nos contactas?</label>
+                    <textarea id="razonContacto" rows="4" placeholder="Escribe aquí tu mensaje" required></textarea>
+                </div>
+            </fieldset>
+            
+            <div class="botones">
+                <input type="submit" value="Enviar" id="button1">
+                <input type="button" value="Cancelar" id="button2">
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-info">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle xx xxxx, xxxx, xxxx</p>
+                <p>Teléfono: xxxxxxxxxx</p>
+                <p>Email: contacto@cafeyarte.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://facebook.com/cafeyarte" target="">Facebook</a>
+                <a href="https://instagram.com/cafeyarte" target="">Instagram</a>
+                <a href="https://twitter.com/cafeyarte" target="">Twitter</a>
+            </div>
+            <div class="footer-descripcion">
+                <p>&copy; 2024 Café y Arte. Todos los derechos reservados. Diseñado con amor para ofrecerte la mejor experiencia en café y arte.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
